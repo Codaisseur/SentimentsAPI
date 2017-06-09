@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 5000
 const app = express()
 
 app
+  .get('/', (req, res) => {
+    res.send({ message: 'hello, world!' })
+  })
 	.get('/search/:term', (req, res) => {
 		const searchTerm = req.params.term
 
