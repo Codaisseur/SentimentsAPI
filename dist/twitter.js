@@ -10,9 +10,6 @@ const twit = new Twit({
     access_token_secret: TWITTER_TOKEN_SECRET,
 });
 exports.default = (searchTerm) => {
-    const now = new Date();
-    const today = dateFormat(now, 'yyyy-mm-dd');
-    const todaysSearch = `${searchTerm} since:${today}`;
-    return twit.get('search/tweets', { q: todaysSearch, count: 100 });
+    return twit.get('search/tweets', { q: searchTerm, count: 100 });
 };
 //# sourceMappingURL=twitter.js.map
