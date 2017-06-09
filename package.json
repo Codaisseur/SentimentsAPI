@@ -1,7 +1,8 @@
 {
   "main": "dist/index.js",
+  "entrypoint": "dist/index.js",
   "scripts": {
-    "start": "yarn install && node ."
+    "start": "node ."
   },
   "dependencies": {
     "@types/dateformat": "^1.0.1",
