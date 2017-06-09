@@ -1,5 +1,8 @@
 {
   "main": "dist/index.js",
+  "scripts": {
+    "start": "node ."
+  },
   "dependencies": {
     "@types/dateformat": "^1.0.1",
     "@types/express": "^4.0.35",
